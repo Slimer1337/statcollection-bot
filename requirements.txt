@@ -1,0 +1,4 @@
+flask==3.0.3
+gunicorn==21.2.0   # рекомендуется для production
+requests==2.31.0
+python-telegram-bot==20.7  # если используете Telegram API
