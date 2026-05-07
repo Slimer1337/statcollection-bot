@@ -79,7 +79,7 @@ class BotHandler(BaseHTTPRequestHandler):
 # === Запуск ===
 if __name__ == "__main__":
     host = "0.0.0.0"   # ← ВАЖНО: Render требует слушать 0.0.0.0
-    port = int(os.environ.get("PORT", 8000))  # ← Render сам задаёт PORT        
+    port = int(os.environ.get("PORT", 443))  # ← Render сам задаёт PORT        
     server = HTTPServer((host, port), BotHandler)
     print(f"🚀 Локальный бот запущен на http://{host}:{port}/statcollection_bot")
     print("👉 Отправьте POST /botx с JSON: {\"chat_id\": \"test\", \"bot_id\": \"8e4544bb-...\", \"body\": \"/start\"}")
