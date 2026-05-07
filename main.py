@@ -1,5 +1,6 @@
 import os
 import json
+from http import HTTPStatus
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 BOT_ID = os.environ.get("BOT_ID", "8e4544bb-7da5-5531-bbd3-2b0f0b264222")
